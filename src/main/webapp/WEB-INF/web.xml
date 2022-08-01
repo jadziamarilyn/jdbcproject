@@ -1,0 +1,38 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <servlet>
+    <servlet-name>Contact</servlet-name>
+    <servlet-class>com.facilio.servlets.CreateContact</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Contact</servlet-name>
+    <url-pattern>/CreateContactPath</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ListContact</servlet-name>
+    <servlet-class>com.facilio.servlets.ListContact</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListContact</servlet-name>
+    <url-pattern>/ListContactPath</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>UpdateContact</servlet-name>
+    <servlet-class>com.facilio.servlets.UpdateContact</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateContact</servlet-name>
+    <url-pattern>/UpdateContactPath</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DeleteContact</servlet-name>
+    <servlet-class>com.facilio.servlets.DeleteContact</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteContact</servlet-name>
+    <url-pattern>/DeleteContactPath</url-pattern>
+  </servlet-mapping>
+</web-app>
